@@ -1,0 +1,237 @@
+*{
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+.first-section{
+    background-image: url(./images/my-bg-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.first-flexsd{
+    display: none;
+}
+.nav{
+    display: block;
+}
+.nav{
+    padding: 30px;
+}
+.first-flexs{
+    display: flex;
+    justify-content: center;
+}
+.fhfour{
+    font-size: 10px;
+    color:skyblue;
+}
+.fhone{
+    color:white;
+}
+.hotel-opration{
+    text-align: center;
+    padding: 10px;
+}
+.hotel{
+    font-size: 15px;
+    color:skyblue;
+    margin-bottom: 20px;
+}
+.explore{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+.free-trial{
+    color: green;
+    margin-bottom: 10px;
+}
+.four-pms{
+    padding: 30px;
+    color: white;
+}
+.software{
+    font-size: 18px;
+}
+.right-top{
+    margin-bottom: 15px;
+}
+.right-down{
+    margin-bottom: 15px;
+}
+.channel{
+    font-size: 14px;
+}
+.summer{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.highest{
+    width: 150px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+.advice{
+    width: 150px;
+}
+.right-form{
+    background-color: white;
+    width: 250px;
+    margin:20px 5px 0 30px ;
+    padding: 20px 0 20px 0;
+}
+.name{
+    font-size: 8px;
+    color: rgb(15, 15, 34);
+}
+input{
+    /* width: 300px; */
+    height: 30px;
+    /* width: 200px; */
+    border: 1px solid darkgray;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+select{
+    height: 30px;
+    width: 170px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+}
+form{
+    padding: 0 20px ;
+    /* gap: 50px; */
+}
+.click{
+    font-size: 11px;
+    border-radius: 5px;
+    color: rgb(15, 15, 34);
+}
+.formb{
+    background-color: green;
+    border: 1px solid green;
+    height: 30px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.formp{
+    text-align: center;
+    color: red;
+}
+.box{
+    height: 10px;
+    margin-top: 20px;
+}
+.asst{
+    color: red;
+    /* height:30px; */
+}
+.spatwo{
+    color: blue;
+}
+/*tablet*/
+@media screen and (min-width:610px) {
+    .first-flexsd{
+        display: none;
+    }
+    .nav{
+        display: block;
+    }
+    .fhone{
+        font-size: 30px;
+    }
+    .fhfour{
+        font-size: 12px;
+    }
+    .hotel{
+        font-size: 20px;
+    }
+    .explore{
+        font-size: 30px;
+    }
+    .free-trial{
+        font-size: 20px;
+    }
+    .four-pms{
+        display: flex;
+        text-align: center;
+        gap: 30px;
+    }
+    .right-top{
+        margin-bottom: 50px;
+    }
+    .software{
+        font-size: 25px;
+    }
+    .summer{
+       display: grid;
+       place-items: center;
+       gap: 50px;
+       /* justify-content: space-around; */
+    }
+    .highest{
+        width: 200px;
+        border-radius: 5px;
+        background-color: white;
+        margin-bottom: 15px;
+    }
+    .advice{
+        width: 170px;
+    }
+    .right-form{
+        width: 350px;
+        margin: auto;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    input{
+        width: 300px;
+        height: 35px;
+        /* width: 200px; */
+        border: 1px solid darkgray;
+        margin-bottom: 25px;
+        border-radius: 5px;
+    }
+    .name{
+        font-size: 12px;
+        color: rgb(15, 15, 34);
+    }
+    select{
+        height: 35px;
+        width: 300px;
+        border: 1px solid darkgray;
+        border-radius: 5px;
+    }
+    .click{
+        font-size: 14px;
+    }
+    .box{
+        height: 10px;
+        margin-bottom: 20px;
+    }
+    .formb{
+        height: 35px;
+        width: 300px;
+    }
+    
+}
+@media screen and (min-width:1000px) {
+    .first-flexsd{
+        display: block;
+        padding: 30px;
+    }
+    .nav{
+        display: none;
+    }
+    
+    
+    
+}

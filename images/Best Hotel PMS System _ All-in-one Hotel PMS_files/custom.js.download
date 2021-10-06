@@ -1,0 +1,190 @@
+$(function() {
+  
+   $.ajax({
+      type: 'POST',
+      //url: 'https://www.ezeetechnosys.com/dynamic/alldata.php',
+      url: 'https://www.ezeeabsolute.com/includes/alldata.php',
+      data: {'countryphone':'<?php echo $countryFrmIP; ?>','website':'eA'},
+
+      context: document.body
+    }).done(function(response) {
+
+     var data = JSON.parse(response);
+     $(".ezeestates").html($('<div>').html(data.clientstates).text());
+     $(".integrationstates").html($('<div>').html(data.integrationstates).text());
+     $(".usersofsoftwarestates").html($('<div>').html(data.usersofsoftwarestates).text());
+     $(".totalroomstates").html($('<div>').html(data.totalroomstates).text());
+     $(".countriestates").html($('<div>').html(data.countriestates).text());
+     $(".distributorsworldwidestates").html($('<div>').html(data.distributorsworldwidestates).text());
+     $(".languagesupportstates").html($('<div>').html(data.languagesupportstates).text());
+     $(".yearsindustrystates").html($('<div>').html(data.yearsindustrystates).text());
+     $(".otaconnections").html($('<div>').html(data.otaconnections).text());
+     $(".badgeCapterra300").html($('<div>').html(data.badgeCapterra300).text());
+     $(".badgeCapterra300Light").html($('<div>').html(data.badgeCapterra300Light).text());
+     $(".badgeFrontrunner300").html($('<div>').html(data.badgeFrontrunner300).text());
+     $(".badgeBooking").html($('<div>').html(data.badgeBooking).text());
+     $(".badgeAirbnb").html($('<div>').html(data.badgeAirbnb).text());
+     $(".badgeCapterra").html($('<div>').html(data.badgeCapterra).text());
+     $(".eAHomeBadges1").html($('<div>').html(data.eAHomeBadges1).text());
+     $(".eAHomeBadges2").html($('<div>').html(data.eAHomeBadges2).text());
+     $(".eAHomeBadges3").html($('<div>').html(data.eAHomeBadges3).text());
+     $(".eAHomeBadges4").html($('<div>').html(data.eAHomeBadges4).text());
+     $(".eAFreetrial1").html($('<div>').html(data.eAFreetrial1).text());
+     $(".eAFreetrial2").html($('<div>').html(data.eAFreetrial2).text());
+     $(".eAFreetrial3").html($('<div>').html(data.eAFreetrial3).text());
+
+    });
+  
+  
+  
+    //Clients
+    $('.ar-right').click(function(){
+        jQuery('.pad').animate({
+            scrollLeft:'+=200'
+        }, 'slow'); 
+    });
+    $('.ar-left').click(function(){
+        jQuery('.pad').animate({
+            scrollLeft:'-=200'
+        }, 'slow');
+    });
+    $('.client-cnt').find('[data-type="americas"]').show();
+    $('.tab-btn').on('click', function(){
+        $('.tab-btn').removeClass('tab-active');
+        $(this).addClass('tab-active');
+        var btnId = $(this).attr('id');
+        $('.prop-type').hide();
+        $('.client-cnt').find('[data-type="'+ btnId +'"]').show();
+        $(window).off("unveil");
+        $("img").unveil(200);
+    });
+  
+  $('.claimbtn').on('click', function(event){
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top - 170
+        }, 500);
+        $('#FirstName').focus();
+    });
+  
+    //Home Carousel
+    /*$('#awardsCarousel').owlCarousel({
+        autoPlay : 7000,
+        autoplayTimeout : 5000,
+        items : 5,
+        margin : 10,
+        loop:true,
+      responsiveClass:true,
+      responsive:{
+        320:{
+            items:1
+        },
+        580:{
+            items:2
+        },
+        767:{
+            items:2
+        },
+        991:{
+            items:3
+        }
+      }
+    });*/
+  
+    if ($(document).width() > 767 ){
+      $('#awardsCarousel').owlCarousel({
+        autoPlay : 7000,
+        lazyLoad: true,
+        singleItem: true
+      });
+
+  };
+
+    //Clients Carousel
+    $('#clientsCarousel').owlCarousel({
+        autoPlay : 7000,
+        autoplayTimeout : 5000,
+        items : 5,
+        navigation : true,
+        margin : 10,
+        loop:true,
+      responsiveClass:true,
+      responsive:{
+        320:{
+            items:1
+        },
+        580:{
+            items:2
+        },
+        767:{
+            items:2
+        },
+        991:{
+            items:3
+        }
+      }
+    });
+  
+    $('#trialReviews').owlCarousel({
+      autoPlay : 7000,
+      items: 1,
+      navigation: true,
+      singleItem: true
+    });
+  
+    setTimeout(function(){
+        //$(".bannerForm .hs-submit .actions").append('<div class="hsNotes"><span>No CC required. Unlimited users.</span>By clicking on "Start your 14-day free trial now" you agree to all our <a href="https://www.ezeeabsolute.com/termsofuse.php" target="_blank">terms and conditions</a>.</div>');
+       $(".bannerForm .hs-submit .actions").append('<div class="hsNotes"><span>No CC required. Unlimited users.</span></div>');  
+       $(".trialReviews-ratings01").append('<em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em>');
+        $(".trialReviews-ratings02").append('<em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em>');
+        $(".trialReviews-ratings03").append('<em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em>');
+        $(".trialReviews-ratings04").append('<em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star"></em><em class="fa fa-star-o"></em>');
+
+    },1000);
+  
+  $('#spanYear').html(new Date().getFullYear());
+  
+  
+// FAQ
+$('.faqque').on('click', function(){
+    $(this).next('.faqans').toggle();
+    $(this).parents('li').toggleClass('shdw-more');
+});
+
+$('.quecat a').on('click', function(){
+    var faqTitle = $(this).text();
+    $('.faqCat-title').text(faqTitle);
+});
+
+$('.quecat').find('a').each(function(){
+    $(this).on('click', function(){
+        $('.quecat').find('a').removeClass('fselected');
+        $(this).addClass('fselected');
+        var ccat = $(this).attr('data-cat');
+        if(ccat == "all"){
+            $('.faqcatwise').find('li').show();
+        }else{
+            $('.faqcatwise').find('li').hide();
+            $('.faqcatwise').find('li[data-faq='+ccat+']').show();
+        }
+    });
+});
+ 
+  
+  
+  });
+
+$(window).load(function() {
+  $('#absvideo').on('show.bs.modal', function() {
+    $("#introvid").attr('src','https://www.youtube.com/embed/Ahtw5IhpTso?autohide=1&rel=0&showinfo=0&iv_load_policy=3&autoplay=1');  
+  });
+  $('#absvideo').on('hidden.bs.modal', function() {
+    $("#introvid").attr('src','');
+  });
+  $('#absappvideo').on('show.bs.modal', function() {
+    $("#absappvideointro").attr('src','https://www.youtube.com/embed/3d_2TBRiVT8?autohide=1&rel=0&showinfo=0&iv_load_policy=3&autoplay=1');  
+  });
+  $('#absappvideo').on('hidden.bs.modal', function() {
+    $("#absappvideointro").attr('src','');
+  });
+});
