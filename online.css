@@ -223,7 +223,7 @@ form{
     }
     
 }
-@media screen and (min-width:1000px) {
+/* @media screen and (min-width:1000px) {
     .first-flexsd{
         display: block;
         padding: 30px;
@@ -234,4 +234,4 @@ form{
     
     
     
-}
+} */
