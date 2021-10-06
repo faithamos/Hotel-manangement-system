@@ -10,6 +10,7 @@ body{
     background-image: url(./images/my-bg-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    /* margin-bottom: 20px; */
 }
 .first-flexsd{
     display: none;
@@ -19,6 +20,12 @@ body{
 }
 .nav{
     padding: 30px;
+}
+.hotel-oprationd{
+    display: none;
+}
+.hotel-opration{
+    display: block;
 }
 .first-flexs{
     display: flex;
@@ -84,6 +91,7 @@ body{
     width: 250px;
     margin:20px 5px 0 30px ;
     padding: 20px 0 20px 0;
+    border-radius: 5px;
 }
 .name{
     font-size: 8px;
@@ -105,6 +113,8 @@ select{
 }
 form{
     padding: 0 20px ;
+    /* height: 300px; */
+    /* margin-bottom: 20px; */
     /* gap: 50px; */
 }
 .click{
@@ -137,12 +147,57 @@ form{
 .spatwo{
     color: blue;
 }
+.note-paragraph{
+    margin-top: 20px;
+    background-color:rgb(247, 232, 215) ;
+    line-height: 20px;
+}
+.Notes{
+    font-size: 12px;
+    padding: 20px 40px 20px 40px;
+    color: rgb(218, 190, 156);
+}
+.note{
+    color: rgb(236, 140, 14);
+}
+#slider{
+    overflow: hidden;
+
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+}
+#slider figure img{
+    width: 8%;
+    float: left;
+}
+@keyframes slider{
+    0% {
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left:-100%;
+    }
+}
 /*tablet*/
 @media screen and (min-width:610px) {
     .first-flexsd{
         display: none;
     }
     .nav{
+        display: block;
+    }
+    .hotel-oprationd{
+        display: none;
+    }
+    .hotel-opration{
         display: block;
     }
     .fhone{
@@ -223,7 +278,7 @@ form{
     }
     
 }
-/* @media screen and (min-width:1000px) {
+@media screen and (min-width:1000px) {
     .first-flexsd{
         display: block;
         padding: 30px;
@@ -231,7 +286,42 @@ form{
     .nav{
         display: none;
     }
+    .hotel-oprationd{
+        display: block;
+        padding: 30px;
+    }
+    .hotel-opration{
+        display: none;
+    }
+    .explore{
+        width: 450px;
+        font-size: 30px;
+    }
+    .first-container{
+        display: flex;
+    }
+    .summer{
+        display: flex;
+        flex-direction: row;
+    }
+    .right-form{
+        width: 400px;
+    }
+    input{
+        width: 350px;
+        height: 35px;
+    }
+    select{
+        height: 35px;
+        width: 350px;
+    }
+    .formb{
+        height: 35px;
+        padding: 10px;
+        width: 350px;
+    }
     
     
     
-} */
+    
+}
