@@ -162,7 +162,7 @@ form{
 }
 #slider{
     overflow: hidden;
-
+    margin-bottom: 40px;
 }
 #slider figure{
     position: relative;
@@ -184,6 +184,168 @@ form{
     }
     25%{
         left:-100%;
+    }
+    45%{
+        left: -100%;
+    }
+}
+.slid-hthree{
+    padding: 30px;
+    text-align: center;
+    color: rgb(8, 8, 26);
+    font-size: 20px;
+}
+.section-three{
+    padding: 30px;
+}
+.three-htree{
+    text-align: center;
+    color: rgb(13, 13, 46);
+}
+.three-htree:hover{
+    color: blue;
+}
+.threep{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: gray;
+}
+.three-image{
+    width: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.watchbo{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 50px;
+    background-color: grey;
+    border: 1px solid grey;
+    color: white;
+    border-radius: 5px;
+}
+.watchbt{
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: rgb(72, 72, 235);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(72, 72, 235);
+}
+.section-three-desktop{
+    display: none;
+}
+.section-three{
+    display: block;
+}
+.four-top{
+    background-color: rgb(233, 233, 233);
+    padding: 30px;
+    text-align: center;
+}
+.four-hthree{
+    font-size: 18px;
+    color: rgb(34, 33, 33);
+}
+.fourp{
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.four-bottom{
+    background-color: rgba(76, 108, 253, 0.925);
+    padding: 30px;
+    text-align: center;
+}
+.four-hthreeb{
+    color: rgb(218, 214, 214);
+    font-size: 18px;
+    line-height: 20px;
+}
+.four-hthreep{
+    font-size: 12px;
+    line-height: 25px;
+    color: white;
+    margin-top: 20px;
+}
+.button-ff{
+    width: 70%;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin-top: 30px;
+}
+.button-fs{
+    width: 70%;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid yellow;
+    margin-top: 30px;
+    background-color: yellow;
+}
+.desktop-phone{
+    display: none;
+}
+.four-bottom{
+    display: block;
+}
+.section-five{
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+.hoteliers{
+    color: rgb(46, 46, 238);
+    margin-bottom: 40px;
+}
+.ezee{
+   color: rgb(29, 23, 23);
+   margin-bottom: 20px; 
+   margin-top: 20px;
+}
+.ezeep{
+    color: rgb(31, 27, 27);
+    /* line-height: 20px; */
+    /* margin-bottom: 30px; */
+}
+.slider{
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.slider figure, .ezeeone, .ezeetwo, .ezeet, .ezeef{
+    position: relative;
+    width: 200%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+}
+.slider figure img{
+    width: 8%;
+    float: left;
+}
+/* img{
+    width: 300px;
+} */
+@keyframes slider{
+    0% {
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left: -100%;
     }
 }
 /*tablet*/
@@ -276,6 +438,74 @@ form{
         height: 35px;
         width: 300px;
     }
+    .slid-hthree{
+        font-size: 25px;
+    }
+    #slider figure{
+        position: relative;
+        width: 400%;
+        margin: 0;
+        left: 0;
+        animation: 10s slider infinite;
+    }
+    #slider figure img{
+        width: 8%;
+        float: left;
+    }
+    .section-three-desktop{
+        display: block;
+        padding:40px ;
+    }
+    .section-three{
+        display: none;
+    }
+    .section-threef{
+        display: flex;
+    }
+    .three-image{
+        width: 50px;
+        display: block;
+        /* margin: 10px; */
+    }
+    .four-top{
+        padding: 50px;
+    }
+    .four-hthree{
+        font-size: 20px;
+    }
+    .fourp{
+        font-size: 14px;
+    }
+    .four-bottom{
+        padding: 50px;
+    }
+    .four-hthreeb{
+        font-size: 20px;
+    }
+    .four-hthreep{
+        font-size: 14px;
+    }
+    .button-ff{
+        width: 50%;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid white;
+        margin-top: 30px;
+    }
+    .button-fs{
+        width: 50%;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid yellow;
+        margin-top: 30px;
+        background-color: yellow;
+    }
+    .desktop-phone{
+        display: none;
+    }
+    .four-bottom{
+        display: block;
+    }
     
 }
 @media screen and (min-width:1000px) {
@@ -319,6 +549,132 @@ form{
         height: 35px;
         padding: 10px;
         width: 350px;
+    }
+    .note-paragraph{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .slid-hthree{
+        font-size: 35px;
+    }
+    #slider figure{
+        position: relative;
+        width: 200%;
+        margin: 0;
+        left: 0;
+        animation: 10s slider infinite;
+        padding: 30px;
+    }
+    #slider figure img{
+        width: 6%;
+        float: left;
+    }
+    .three-container{
+        display: flex;
+    }
+    .three-top{
+        margin-bottom: 50px;
+    }
+    .three-container{
+        width: 80%;
+        margin: 0 auto;
+        gap: 50px;
+    }
+     .desktop-left{
+        width: 50%;
+    } 
+    .desktop-right{
+        width: 50%;
+    }
+    .portal{
+        background-color: whitesmoke;
+        margin-bottom: 40px;
+        padding: 18px;
+        border-radius: 5px;
+    }
+    .portals{
+        background-color: whitesmoke;
+        margin-bottom: 40px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .three-htreed{
+        font-size: 30px;
+        text-align: center;
+        color: rgb(8, 8, 26);
+    }
+    .threep{
+        line-height: 25px;
+    }
+    .watch-button{
+        display: flex;
+    }
+    .watchbo{
+        width: 30%;
+        margin: 0 auto;
+        margin-right: 50px;
+        height: 45px;
+    }
+    .watchbt{
+        width: 30%;
+        margin: 0 auto;
+        margin-left: 50px;
+        height: 50px;
+    }
+    .four-hthree{
+        font-size:35px ;
+    }
+    .fourp{
+        font-size: 20px;
+    }
+    .desktop-phone{
+        display: block;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        margin-bottom: 40px;
+        background-color: rgba(76, 108, 253, 0.925);
+    }
+    .four-bottom{
+        display: none;
+    }
+    .phone-container{
+        display: flex;
+    }
+    .bottom-leftf{
+        width: 60%;
+        padding: 40px;
+        
+    }
+    .bottom-rightf{
+        width: 40%;
+        /* background-color: tomato; */
+        display: flex;
+        justify-content: center;
+        
+    }
+    .four-buttonp{
+        display: flex;
+        gap: 30px;
+    }
+    .button-ff{
+        width: 40%;
+        height: 40px;
+    }
+    .button-fs{
+        width: 40%;
+        height: 40px;
+    }
+    .four-hthreeb{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .four-hthreep{
+        font-size: 18px;
+    }
+    .white-phone{
+        width: 450px;
     }
     
     
