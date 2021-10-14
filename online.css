@@ -298,56 +298,64 @@ form{
     display: block;
 }
 .section-five{
-    padding: 30px;
     text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.five-htwo{
+    font-size:25px;
+    color: rgb(55, 55, 245);
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.five-htre{
+    font-size: 18px;
+    color: rgb(32, 30, 30);
+    margin-bottom: 40px;
+}
+.fivep{
     font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
 }
-.hoteliers{
-    color: rgb(46, 46, 238);
-    margin-bottom: 40px;
+.five-img{
+    width: 100px;
 }
-.ezee{
-   color: rgb(29, 23, 23);
-   margin-bottom: 20px; 
-   margin-top: 20px;
+.five-button{
+    height: 30px;
+    width: 250px;
+    margin-top: 30px;
+    background-color: rgb(21, 21, 216);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(21, 21, 216);
+    padding: 10px;
 }
-.ezeep{
-    color: rgb(31, 27, 27);
-    /* line-height: 20px; */
-    /* margin-bottom: 30px; */
+.section-six{
+    background-color: rgb(233, 233, 233);
 }
-.slider{
-    overflow: hidden;
-    margin-bottom: 40px;
+.six-container{
+    text-align: center;
 }
-.slider figure, .ezeeone, .ezeetwo, .ezeet, .ezeef{
-    position: relative;
-    width: 200%;
-    margin: 0;
-    left: 0;
-    animation: 10s slider infinite;
+.six-image{
+    width: 120px;
 }
-.slider figure img{
-    width: 8%;
-    float: left;
+.six-hf{
+    font-size: 14px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    color: rgb(94, 93, 93);
 }
-/* img{
-    width: 300px;
-} */
-@keyframes slider{
-    0% {
-        left:0;
-    }
-    20%{
-        left:0;
-    }
-    25%{
-        left:-100%;
-    }
-    45%{
-        left: -100%;
-    }
+.six-htre{
+    text-align: center;
+    font-size:20px ;
+    color: rgb(43, 41, 41);
+    margin-bottom: 30px;
 }
+
 /*tablet*/
 @media screen and (min-width:610px) {
     .first-flexsd{
@@ -506,6 +514,43 @@ form{
     .four-bottom{
         display: block;
     }
+    .section-five{
+        padding: 50px;
+    }
+    .five-htwo{
+        font-size:22px;
+    }
+    .five-img{
+        width: 150px;
+    }
+    .five-button{
+        height: 40px;
+        width: 300px;
+    }
+    .five-container{
+        background-color:whitesmoke;
+        padding: 30px;
+        border-radius: 5px;
+    }
+    .six-image{
+        width: 180px;
+    }
+    .six-htre{
+        font-size: 25px;
+    }
+    .six-hf{
+        font-size: 14px;
+        width: 350px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        
+    }
+    .section-six{
+        background-color: rgb(233, 233, 233);
+        padding: 20px;
+    }
+
+
     
 }
 @media screen and (min-width:1000px) {
@@ -675,6 +720,29 @@ form{
     }
     .white-phone{
         width: 450px;
+    }
+    .five-htwo{
+        font-size:35px;
+    }
+    .five-htre{
+        font-size: 25px;
+    }
+    .fivep{
+       font-size: 18px; 
+    }
+    .six-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .six-image{
+        width: 130px;
+    }
+    .six-hf{
+        font-size: 14px;
+        /* width: 350px; */
+        margin: 0 auto;
+        margin-bottom: 50px;
+        
     }
     
     
