@@ -163,6 +163,7 @@ form{
 #slider{
     overflow: hidden;
     margin-bottom: 40px;
+    padding: 30px;
 }
 #slider figure{
     position: relative;
@@ -354,6 +355,133 @@ form{
     font-size:20px ;
     color: rgb(43, 41, 41);
     margin-bottom: 30px;
+}
+.section-seven{
+    background-color: rgb(253, 253, 253);
+    padding: 20px;
+}
+.seven-top{
+    text-align: center;
+    padding: 30px;
+}
+.seven-htre{
+    font-size: 22px;
+    color: rgb(78, 78, 190);
+    margin-bottom: 25px;
+}
+.sevenp{
+    color: rgb(56, 55, 55);
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.slider{
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+}
+.slider figure img{
+    width: 8%;
+    float: left;
+}
+@keyframes slider{
+    0% {
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left: -100%;
+    }
+}
+.section-eight{
+    background-color: rgb(252, 249, 249);
+    padding: 30px;
+    /* text-align: center; */
+}
+.eight-middle{
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+.quesf{
+    display: flex;
+    padding: 10px;
+}
+.eight-htwo{
+    color: rgb(68, 68, 221);
+    margin-bottom: 40px;
+    text-align: center;
+}
+.middle-hf{
+    font-size: 14px;
+    color: rgb(70, 69, 69);
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.middlep{
+    color: gray;
+    font-size: 14px;
+    line-height: 20px;
+}
+.last-htre{
+    background-color: rgb(68, 68, 221);
+    font-size: 14px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+}
+.lastp{
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    /* padding: 0px; */
+}
+.eight-dr{
+    display: none;
+}
+.section-nine{
+    /* padding: 30px; */
+}
+.nine-top{
+    background-color:rgb(5, 5, 17);
+    padding: 30px;
+    text-align: center;
+}
+.nineht{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.nineb{
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: green;
+    border-radius: 1px solid green;
+    border-radius: 7px;
+}
+.nine-bottom{
+    padding: 30px;
+    text-align: center;
+}
+.section-nined{
+    display: none;
+}
+.section-nine{
+    display: block;
 }
 
 /*tablet*/
@@ -549,9 +677,62 @@ form{
         background-color: rgb(233, 233, 233);
         padding: 20px;
     }
-
-
-    
+    .slider figure{
+        position: relative;
+        width: 400%;
+        margin: 0;
+        left: 0;
+        animation: 10s slider infinite;
+    }
+    .seven-htre{
+        font-size: 25px;
+        color: rgb(78, 78, 190);
+        margin-bottom: 25px;
+    }
+    .section-eight{
+        padding: 70px;
+    }
+    .eight-middle{
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+    }
+    .quesf{
+        display: flex;
+        padding: 10px;
+    }
+    .eight-htwo{
+        font-size: 20px;
+    }
+    .middle-hf{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .middlep{
+        color: gray;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .last-htre{
+        width: 15px;
+        height: 15px;
+    }
+    .eight-dr{
+        display: none;
+    }
+    .nineb{
+        width: 60%;
+        height: 45px;
+    }
+    .nineht{
+        font-size: 25px;
+    }
+    .section-nined{
+        display: none;
+    }
+    .section-nine{
+        display: block;
+    }
 }
 @media screen and (min-width:1000px) {
     .first-flexsd{
@@ -739,12 +920,89 @@ form{
     }
     .six-hf{
         font-size: 14px;
-        /* width: 350px; */
+        width: 200px;
         margin: 0 auto;
         margin-bottom: 50px;
         
     }
-    
+    .six-htre{
+        margin: 50px;
+        font-size: 35px;
+        color: rgb(53, 51, 51);
+    }
+    .section-six{
+        background-color: rgb(233, 233, 233);
+        padding: 20px;
+    }
+    .slider figure{
+        position: relative;
+        width: 200%;
+        margin: 0;
+        left: 0;
+        animation: 10s slider infinite;
+    }
+    .seven-htre{
+        font-size: 35px;
+        color: rgb(78, 78, 190);
+        margin-bottom: 25px;
+    }
+    .section-eight{
+        padding: 70px;
+    }
+    .eight-middle{
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+    }
+    .quesf{
+        display: flex;
+        padding: 10px;
+    }
+    .eight-htwo{
+        font-size: 35px;
+    }
+    .middle-hf{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .lastp{
+        font-size: 18px;
+    }
+    .eight-dr{
+        display: block;
+    }
+    .desktope-container{
+        display: flex;
+    }
+    .imagebg{
+        width: 500px;
+    }
+    .section-nined{
+        display: block;
+    }
+    .section-nine{
+        display: none;
+    }
+    .button-container{
+        display: flex;
+        background-color: #0b0b22;
+        padding: 50px;
+    }
+    .butten-left{
+        width: 50%;
+    }
+    .button-right{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .button-htr{
+        color: white;
+        font-size: 30px;
+    }
+    .nineb{
+        border: 1px solid green;
+    }
     
     
     
